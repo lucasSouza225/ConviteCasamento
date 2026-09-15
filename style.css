@@ -1,0 +1,322 @@
+:root {
+    --cor-dourada: #C5A059; 
+    --cor-fundo-creme: #FDFBF7;
+    --cor-texto: #555;
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-manuscrita: 'Great Vibes', cursive;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--cor-fundo-creme);
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+}
+
+.capa {
+    height: 100vh;
+    background-image: url('img/casamento.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.filtro-escuro {
+    background-color: rgba(0, 0, 0, 0.4); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.nomes-capa {
+    font-family: var(--fonte-manuscrita);
+    font-size: 5em; 
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.secao-casal {
+    position: relative;
+    padding: 0 20px 60px 20px;
+}
+
+.cartao-casal {
+    background-color: white;
+    max-width: 600px;
+    margin: -80px auto 0 auto; 
+    border-radius: 15px;
+    padding: 40px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    text-align: center;
+    position: relative;
+    z-index: 10; 
+}
+
+.cartao-casal h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-dourada);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.lista-perfis {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.moldura-foto {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--cor-dourada);
+    border-radius: 50%; 
+    overflow: hidden;
+    margin: 0 auto 15px auto;
+}
+
+.moldura-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.perfil h3 {
+    font-family: var(--fonte-manuscrita);
+    color: var(--cor-dourada);
+    font-size: 2rem;
+}
+
+.botao-historia, .botao-confirmar {
+    background-color: var(--cor-dourada);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-family: var(--fonte-texto);
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.botao-historia:hover {
+    background-color: #a38142; 
+}
+
+.secao-detalhes {
+    padding: 60px 20px;
+    background-color: var(--cor-fundo-creme);
+    max-width: 900px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo-dourado {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-dourada);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.texto-versiculo {
+    font-size: 0.9rem;
+    color: #777;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.data-destaque {
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.contagem-tempo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.caixa-tempo {
+    background-color: white;
+    border-radius: 10px;
+    width: 70px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+}
+
+.caixa-tempo .numero {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1;
+}
+
+.caixa-tempo .legenda {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 5px;
+}
+
+.lista-eventos {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.cartao-evento {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 400px; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end; 
+    text-align: center;
+}
+
+.filtro-evento {
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+.icone-evento {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.cartao-evento h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.cartao-evento .horario {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.cartao-evento h4 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.2rem;
+    color: var(--cor-dourada); 
+    margin-bottom: 10px;
+}
+
+.cartao-evento .endereco {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    max-width: 250px;
+}
+
+.botao-mapa {
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.botao-mapa:hover {
+    background-color: var(--cor-dourada);
+    color: white;
+}
+
+.container-mapa {
+    margin-bottom: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.imagem-mapa {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.texto-final {
+    font-size: 0.85rem;
+    color: #777;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.botao-confirmar {
+    background-color: var(--cor-dourada);
+    color: white;
+    border: none;
+    padding: 18px 50px;
+    border-radius: 8px;
+    font-family: var(--fonte-texto);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+}
+
+.botao-confirmar:hover {
+    background-color: #a38142;
+    transform: translateY(-2px); 
+}
+
+@media (min-width: 768px) {
+    .lista-eventos {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cartao-evento {
+        width: 50%;
+        max-width: 400px;
+    }
+}
