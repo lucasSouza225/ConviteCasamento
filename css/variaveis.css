@@ -1,0 +1,16 @@
+:root {
+    --cor-dourada: #C5A059; 
+    --cor-fundo-creme: #FDFBF7;
+    --cor-texto: #555;
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-manuscrita: 'Great Vibes', cursive;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--cor-fundo-creme);
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+}

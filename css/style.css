@@ -1,7 +1,7 @@
 :root {
-    --cor-dourada: #C5A059; 
-    --cor-fundo-creme: #FDFBF7;
-    --cor-texto: #555;
+    --cor-dourada: #C9A227; 
+    --cor-fundo-creme: #F8F5ED;
+    --cor-texto: #0B1F3A;
     --fonte-titulo: 'Playfair Display', serif;
     --fonte-texto: 'Montserrat', sans-serif;
     --fonte-manuscrita: 'Great Vibes', cursive;
@@ -13,11 +13,12 @@ body {
     background-color: var(--cor-fundo-creme);
     font-family: var(--fonte-texto);
     color: var(--cor-texto);
+    overflow-x: hidden; 
 }
 
 .capa {
     height: 100vh;
-    background-image: url('img/casamento.png');
+    background-image: url('img/home/casamento.png'); 
     background-size: cover;
     background-position: center;
     position: relative;
@@ -28,7 +29,7 @@ body {
 }
 
 .filtro-escuro {
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.5); 
     width: 100%;
     height: 100%;
     display: flex;
@@ -41,7 +42,7 @@ body {
 
 .nomes-capa {
     font-family: var(--fonte-manuscrita);
-    font-size: 5em; 
+    font-size: clamp(3rem, 10vw, 6rem); 
     font-weight: 400;
     margin: 10px 0;
 }
@@ -72,9 +73,10 @@ body {
 
 .lista-perfis {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; 
+    align-items: center;
     margin-top: 30px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .moldura-foto {
@@ -111,7 +113,7 @@ body {
     transition: 0.3s;
 }
 
-.botao-historia:hover {
+.botao-historia:hover, .botao-confirmar:hover {
     background-color: #a38142; 
 }
 
@@ -149,15 +151,15 @@ body {
 .contagem-tempo {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px; 
     margin-bottom: 50px;
 }
 
 .caixa-tempo {
     background-color: white;
     border-radius: 10px;
-    width: 70px;
-    height: 80px;
+    width: 65px; 
+    height: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +168,7 @@ body {
 }
 
 .caixa-tempo .numero {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #333;
     line-height: 1;
@@ -302,6 +304,8 @@ body {
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+    width: 100%; 
+    max-width: 300px;
 }
 
 .botao-confirmar:hover {
@@ -310,6 +314,14 @@ body {
 }
 
 @media (min-width: 768px) {
+    
+    
+    .lista-perfis {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    
     .lista-eventos {
         flex-direction: row;
         justify-content: center;
@@ -318,5 +330,9 @@ body {
     .cartao-evento {
         width: 50%;
         max-width: 400px;
+    }
+
+    .botao-confirmar {
+        width: auto;
     }
 }
