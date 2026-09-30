@@ -18,7 +18,7 @@ body {
 
 .capa {
     height: 100vh;
-    background-image: url('img/home/casamento.png'); 
+    background-image: url('../img/home/casamento.png'); 
     background-size: cover;
     background-position: center;
     position: relative;

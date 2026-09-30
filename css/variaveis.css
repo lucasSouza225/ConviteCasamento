@@ -14,3 +14,8 @@ body {
     font-family: var(--fonte-texto);
     color: var(--cor-texto);
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

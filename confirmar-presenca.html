@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Presença - Lucas & Isabel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variaveis.css">
+    <link rel="stylesheet" href="css/confirmar.css">
+</head>
+<body>
+
+    <div class="container-formulario">
+        
+        <div class="cartao-formulario" id="cartao-formulario">
+            
+            <h2 class="titulo-formulario">Confirmar presença</h2>
+
+            <form id="formulario-presenca">
+                
+                <div class="grupo-campo">
+                    <label class="label-campo">*Presença</label>
+                    <div class="grupo-botoes">
+                        <button type="button" class="botao-opcao ativo" data-valor="sim">Sim</button>
+                        <button type="button" class="botao-opcao" data-valor="talvez">Talvez</button>
+                        <button type="button" class="botao-opcao" data-valor="nao">Não</button>
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="nome" class="label-campo">*Nome</label>
+                    <input type="text" id="nome" class="input-campo" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="acompanhantes" class="label-campo">*Quantidade de acompanhantes</label>
+                    <input type="number" id="acompanhantes" class="input-campo" min="0" value="0">
+                </div>
+
+                <div class="container-botao-confirmar">
+                    <button type="submit" class="botao-confirmar">Confirmar</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="cartao-formulario escondido" id="cartao-mensagem">
+            
+            <h2 class="titulo-mensagem">Aguardamos sua presença</h2>
+
+            <div class="grupo-botoes-mensagem">
+                <a href="dicas-presentes.html" class="botao-mensagem dourado">Sugestão para presentes</a>
+                <a href="index.html" class="botao-mensagem vazado">Já sei o que levar</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/confirmar.js"></script>
+</body>
+</html>

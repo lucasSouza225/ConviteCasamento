@@ -1,0 +1,166 @@
+.container-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: var(--cor-fundo-creme);
+}
+
+.cartao-formulario {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+}
+
+.escondido {
+    display: none;
+}
+
+.titulo-formulario {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-dourada);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grupo-campo {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.label-campo {
+    display: block;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.grupo-botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.botao-opcao {
+    background-color: transparent;
+    border: 1px solid var(--cor-dourada);
+    color: var(--cor-dourada);
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-family: var(--fonte-texto);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-opcao.ativo,
+.botao-opcao:hover {
+    background-color: var(--cor-dourada);
+    color: white;
+}
+
+.input-campo {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    font-family: var(--fonte-texto);
+    font-size: 0.9rem;
+    color: #555;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-campo:focus {
+    background-color: #ebebeb;
+    box-shadow: 0 0 0 2px rgba(197, 160, 89, 0.3);
+}
+
+.container-botao-confirmar {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.botao-confirmar {
+    background-color: var(--cor-dourada);
+    color: white;
+    border: none;
+    padding: 18px 60px;
+    border-radius: 10px;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+}
+
+.botao-confirmar:hover {
+    background-color: #a38142;
+    transform: translateY(-2px);
+}
+
+/* ===== NOVOS ESTILOS PARA A MENSAGEM ===== */
+
+.titulo-mensagem {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-dourada);
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.grupo-botoes-mensagem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.botao-mensagem {
+    width: 100%;
+    max-width: 300px;
+    padding: 18px 20px;
+    border-radius: 8px;
+    font-family: var(--fonte-texto);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.botao-mensagem.dourado {
+    background-color: var(--cor-dourada);
+    color: white;
+    border: 1px solid var(--cor-dourada);
+}
+
+.botao-mensagem.dourado:hover {
+    background-color: #a38142;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+}
+
+.botao-mensagem.vazado {
+    background-color: transparent;
+    color: var(--cor-dourada);
+    border: 1px solid var(--cor-dourada);
+}
+
+.botao-mensagem.vazado:hover {
+    background-color: var(--cor-dourada);
+    color: white;
+    transform: translateY(-2px);
+}
